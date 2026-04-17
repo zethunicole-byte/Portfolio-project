@@ -1,0 +1,173 @@
+/* === MOBILE === */
+h2.about-me {
+  text-align: left;
+  font-family: Verdana, sans-serif;
+  font-weight: 400;
+  color: rgb(171, 140, 145);
+  text-decoration: underline wavy pink;
+}
+
+h3.experiences {
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  color: rgb(171, 140, 145);
+  padding: 20px;
+  background-color: #333;
+  color: lightpink;
+  margin-top: 60px;
+  border-top: 2px solid lightpink;
+}
+
+.boxes-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.box {
+  background-color: lightpink;
+  border: 2px solid lightpink;
+  border-radius: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+}
+
+.box h4 {
+  color: rgb(171, 140, 145);
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 14px;
+}
+
+h4.skills {
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  color: lightpink;
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+
+header {
+  text-align: center;
+  color: lightpink;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  color: lightpink;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: rgb(235, 93, 188);
+}
+
+nav h1 {
+  color: lightpink;
+  margin: 0;
+  font-size: 20px;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  float: right;
+  margin: 0 0 10px 20px;
+  border-radius: 10px;
+}
+
+section p {
+  font-family: sans-serif;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.logos-row {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+
+.skill-logo {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+footer {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: lightpink;
+  margin-top: 40px;
+  border-top: 2px solid lightpink;
+}
+
+footer a {
+  color: lightpink;
+  display: block;
+  margin-top: 5px;
+}
+
+== DESKTOP 1024px === */ @media (min-width: 1024px) {
+  nav {
+    font-size: 16px;
+  }
+
+  nav h1 {
+    font-size: 24px;
+  }
+
+  .profile-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  section p {
+    font-size: 16px;
+  }
+
+  header {
+    font-size: 24px;
+  }
+
+  h2.about-me {
+    font-size: 20px;
+  }
+
+  .skill-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
