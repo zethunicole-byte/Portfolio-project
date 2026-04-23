@@ -1,4 +1,9 @@
 /* === MOBILE === */
+
+section {
+  padding-top: 20px;
+}
+
 h2.about-me {
   text-align: left;
   font-family: Verdana, sans-serif;
@@ -7,52 +12,10 @@ h2.about-me {
   text-decoration: underline wavy pink;
 }
 
-h3.experiences {
-  text-align: center;
-  font-family: Verdana, sans-serif;
-  color: rgb(171, 140, 145);
-  padding: 20px;
-  background-color: #333;
-  color: lightpink;
-  margin-top: 60px;
-  border-top: 2px solid lightpink;
-}
-
-.boxes-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-.box {
-  background-color: pink;
-  padding: 20px;
-  border-radius: 10px;
-  aspect-ratio: 1 / 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.box h4 {
-  color: rgb(171, 140, 145);
-  margin-bottom: 10px;
-}
-
-.box p {
-  font-size: 14px;
-}
-
-h4.skills {
-  text-align: center;
-  font-family: Verdana, sans-serif;
-  color: lightpink;
-  font-size: x-large;
-  padding: 20px;
-  background-color: #333;
-  color: lightpink;
-  margin-top: 60px;
-  border-top: 1px solid lightpink;
+.tagline {
+  color: hotpink;
+  font-size: 16px;
+  margin-bottom: 15px;
 }
 
 header {
@@ -70,12 +33,13 @@ nav {
   background-color: #333;
   position: sticky;
   top: 0;
+  flex-wrap: wrap;
 }
 
 nav a {
   color: lightpink;
   text-decoration: none;
-  margin: 0 10px;
+  margin: 5px 10px;
 }
 
 nav a:hover {
@@ -92,15 +56,78 @@ nav h1 {
   width: 200px;
   height: 200px;
   object-fit: cover;
-  float: right;
-  margin: 0 0 10px 20px;
+  display: block;
+  margin: 20px auto;
   border-radius: 10px;
 }
 
 section p {
   font-family: sans-serif;
-  font-style: normal;
   line-height: 1.6;
+}
+
+h3.experiences {
+  text-align: center;
+  font-family: Verdana, sans-serif;
+  color: lightpink;
+  padding: 20px;
+  background-color: #333;
+  margin-top: 80px;
+  border-top: 2px solid lightpink;
+}
+
+.boxes-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.box {
+  background-color: pink;
+  padding: 20px;
+  border-radius: 10px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.box h4 {
+  color: rgb(171, 140, 145);
+  margin-bottom: 10px;
+}
+
+.box p {
+  font-size: 14px;
+}
+
+.project-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.project-btn {
+  text-decoration: none;
+  background-color: #ffc0cb;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.project-btn:hover {
+  background-color: white;
+  color: hotpink;
+  border: 1px solid hotpink;
 }
 
 .skills-container {
@@ -124,11 +151,13 @@ section p {
   gap: 20px;
   margin-top: 70px;
 }
+
 .skill-logo {
   width: 100px;
   height: 100px;
   object-fit: contain;
 }
+
 .pink-btn {
   margin-top: 100px;
   padding: 12px 20px;
@@ -141,6 +170,7 @@ section p {
 .pink-btn:hover {
   background-color: hotpink;
 }
+
 footer {
   font-size: 20px;
   text-align: center;
@@ -182,6 +212,8 @@ footer a {
   .profile-img {
     width: 250px;
     height: 250px;
+    float: right;
+    margin: 0 0 10px 20px;
   }
 
   .boxes-container {
@@ -191,7 +223,6 @@ footer a {
   .skill-logo {
     width: 120px;
     height: 120px;
-    object-fit: contain;
   }
 
   footer {
