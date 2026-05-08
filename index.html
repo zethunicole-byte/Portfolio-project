@@ -3,130 +3,281 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zethu's Project</title>
+    <title>Zethu Mthethwa — Junior Software Developer</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css"
+    />
   </head>
 
   <body>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-      <h1>Zethu Mthethwa</h1>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <span class="nav-name">Zethu Mthethwa</span>
     </nav>
 
-    <header id="home">
-      <h2>Junior Software Developer</h2>
+    <header id="home" class="hero">
+      <div class="hero-avatar">
+        <img src="zethu.jpeg" alt="Zethu Mthethwa" />
+      </div>
+      <div class="hero-text">
+        <p class="role">Junior Software Developer</p>
+        <h1>Hey, I'm Zethu 👋</h1>
+        <p>
+          Born in South Africa, based in London. Master's graduate turned
+          developer — building things with JavaScript, Java, CSS &amp; HTML and
+          figuring out problems one project at a time.
+        </p>
+      </div>
     </header>
 
     <main>
-      <section id="about">
-        <img src="zethu.jpeg" alt="A photo of me" class="profile-img" />
-
-        <h2 class="about-me">Hey, I'm Zethu 👋</h2>
-
-        <p>
-          I was born in South Africa and grew up in London, which has given me a
-          diverse perspective and adaptability in different environments. My
-          academic journey began at the University of Kent, where I completed a
-          Master's degree in Criminology. I'm currently training in software
-          development, building skills in JavaScript, CSS, and HTML. I like
-          figuring out problems, creating exciting projects such as video games,
-          and exploring new technology trends.
-        </p>
-      </section>
-
-      <section id="projects">
-        <h3 class="experiences">Portfolio</h3>
-
-        <div class="boxes-container">
-          <div class="box">
-            <h4>Project 1</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam,
-              enim earum omnis voluptatem recusandae, voluptates beatae, odio
-              quia accusamus repudiandae quod culpa! Consectetur impedit saepe
-              omnis. Delectus possimus doloremque deserunt...
-            </p>
-
-            <div class="project-buttons">
-              <a href="#" class="project-btn">View Code</a>
-              <a href="#" class="project-btn">Preview</a>
+      <section id="projects" class="section">
+        <div class="section-header">
+          <h2 class="section-title">Projects</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card-img">
+              <i class="ti ti-device-gamepad-2"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-name">Tic Tac Toe</p>
+              <p class="card-tag">JavaScript · SCSS · HTML</p>
+            </div>
+            <div class="card-overlay">
+              <p class="overlay-title">Tic Tac Toe</p>
+              <p class="overlay-desc">
+                Two-player game with score tracking, turn indicators &amp;
+                confetti on win.
+              </p>
+              <div class="overlay-links">
+                <a
+                  href="https://github.com/zethunicole-byte/Javascript-project"
+                  target="_blank"
+                  rel="noopener"
+                  >Code</a
+                >
+                <a
+                  href="https://zethunicole-byte.github.io/Javascript-project/"
+                  target="_blank"
+                  rel="noopener"
+                  >Live ↗</a
+                >
+              </div>
             </div>
           </div>
 
-          <div class="box">
-            <h4>Project 2</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam,
-              enim earum omnis voluptatem recusandae, voluptates beatae, odio
-              quia accusamus repudiandae quod culpa! Consectetur impedit saepe
-              omnis. Delectus possimus doloremque deserunt..
-            </p>
-
-            <div class="project-buttons">
-              <a href="#" class="project-btn">View Code</a>
-              <a href="#" class="project-btn">Preview</a>
+          <div class="card">
+            <div class="card-img">
+              <i class="ti ti-layout"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-name">Portfolio Site</p>
+              <p class="card-tag">HTML · CSS</p>
+            </div>
+            <div class="card-overlay">
+              <p class="overlay-title">Portfolio Site</p>
+              <p class="overlay-desc">
+                Personal portfolio showcasing my projects and skills.
+              </p>
+              <div class="overlay-links">
+                <a
+                  href="https://github.com/zethunicole-byte/Portfolio-project"
+                  target="_blank"
+                  rel="noopener"
+                  >Code</a
+                >
+                <a
+                  href="https://zethunicole-byte.github.io/Portfolio-project/"
+                  target="_blank"
+                  rel="noopener"
+                  >Live ↗</a
+                >
+              </div>
             </div>
           </div>
 
-          <div class="box">
-            <h4>Project 3</h4>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam,
-              enim earum omnis voluptatem recusandae, voluptates beatae, odio
-              quia accusamus repudiandae quod culpa! Consectetur impedit saepe
-              omnis. Delectus possimus doloremque deserunt...
-            </p>
-
-            <div class="project-buttons">
-              <a href="#" class="project-btn">View Code</a>
-              <a href="#" class="project-btn">Preview</a>
+          <div class="card card--soon">
+            <div class="card-img">
+              <i class="ti ti-code"></i>
+            </div>
+            <div class="card-body">
+              <p class="card-name">Coming Soon</p>
+              <p class="card-tag">In progress</p>
+            </div>
+            <div class="card-overlay">
+              <p class="overlay-title">Coming Soon</p>
+              <p class="overlay-desc">
+                Next project is in the works — check back soon!
+              </p>
+              <div class="overlay-links">
+                <a
+                  href="https://github.com/zethunicole-byte"
+                  target="_blank"
+                  rel="noopener"
+                  >GitHub</a
+                >
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="skills-container">
-        <h4 class="skills">My Technical Skills</h4>
-        <p>I'm currently building with:</p>
-
-        <div class="logos-row">
-          <img
-            src="images/HTML5_1Color_Black.png"
-            alt="HTML logo"
-            class="skill-logo"
-          />
-
-          <img
-            src="images/css-3-logo-png_seeklogo-426084.png"
-            alt="CSS logo"
-            class="skill-logo"
-          />
-
-          <img
-            src="images/javascript-logo.jpg"
-            alt="JavaScript logo"
-            class="skill-logo"
-          />
-
-          <img
-            src="images/java-logo-black-and-white-1.png"
-            alt="Java logo"
-            class="skill-logo"
-          />
+      <section id="skills" class="section section--flush">
+        <div class="section-header">
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-line"></div>
         </div>
+        <div class="skills-grid">
+          <div class="skill">
+            <i class="ti ti-brand-javascript"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="skill">
+            <i class="ti ti-coffee"></i>
+            <p>Java</p>
+          </div>
+          <div class="skill">
+            <i class="ti ti-brand-html5"></i>
+            <p>HTML5</p>
+          </div>
+          <div class="skill">
+            <i class="ti ti-brand-css3"></i>
+            <p>CSS3</p>
+          </div>
+          <div class="skill">
+            <i class="ti ti-brand-git"></i>
+            <p>Git</p>
+          </div>
+        </div>
+      </section>
 
-        <a href="#contact">
-          <button class="pink-btn">Contact Me</button>
-        </a>
+      <section id="about" class="about-section">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-left">
+              <span class="tl-emoji">🎓</span>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-content">
+              <p class="tl-label">University of Kent</p>
+              <p class="tl-title">MSc Criminology</p>
+              <p class="tl-desc">
+                Research, analysis &amp; critical thinking — skills that
+                transfer directly into tech.
+              </p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-left">
+              <span class="tl-emoji">📣</span>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-content">
+              <p class="tl-label">Industry Experience</p>
+              <p class="tl-title">3+ Years Digital Marketing</p>
+              <p class="tl-desc">
+                Campaigns, content strategy &amp; data-driven decision making.
+              </p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-left">
+              <span class="tl-emoji">☁️</span>
+              <div class="tl-line"></div>
+            </div>
+            <div class="tl-content">
+              <p class="tl-label">Certification</p>
+              <p class="tl-title">AWS Certified Cloud Practitioner</p>
+              <p class="tl-desc">
+                Foundational cloud knowledge — infrastructure, services &amp;
+                best practices.
+              </p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-left">
+              <span class="tl-emoji">💻</span>
+            </div>
+            <div class="tl-content">
+              <p class="tl-label">Now</p>
+              <p class="tl-title">Junior Software Developer</p>
+              <p class="tl-desc">
+                Building with JavaScript, Java, CSS &amp; HTML — one project at
+                a time.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer id="contact">
-      <p>zethunicole95@hotmail.com</p>
-      <a href="#home">Back to top</a>
+    <footer id="contact" class="contact">
+      <h2>Let's work together</h2>
+      <div class="contact-cards">
+        <div class="contact-card">
+          <div class="contact-card-inner">
+            <i class="ti ti-mail"></i>
+            <p>Get in touch</p>
+          </div>
+          <a href="mailto:mzethunicole@gmail.com" class="contact-overlay">
+            <i class="ti ti-mail"></i>
+            <p>Email Me</p>
+            <span>mzethunicole@gmail.com</span>
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-inner">
+            <i class="ti ti-brand-github"></i>
+            <p>GitHub</p>
+          </div>
+          <a
+            href="https://github.com/zethunicole-byte"
+            target="_blank"
+            rel="noopener"
+            class="contact-overlay"
+          >
+            <i class="ti ti-brand-github"></i>
+            <p>View my code</p>
+            <span>github.com/zethunicole-byte</span>
+          </a>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-card-inner">
+            <i class="ti ti-brand-linkedin"></i>
+            <p>LinkedIn</p>
+          </div>
+          <a
+            href="https://www.linkedin.com/in/zethu-nicole-mthethwa-7a116930b"
+            target="_blank"
+            rel="noopener"
+            class="contact-overlay"
+          >
+            <i class="ti ti-brand-linkedin"></i>
+            <p>Connect with me</p>
+            <span>Zethu Nicole Mthethwa</span>
+          </a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
